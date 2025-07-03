@@ -11,6 +11,9 @@ function RootLayout() {
           <Link to="/about" className="text-white text-lg font-semibold">
             About
           </Link>
+          <Link to="/blogs" className="text-white text-lg font-semibold">
+            Blogs
+          </Link>
         </nav>
       </header>
       <main>
