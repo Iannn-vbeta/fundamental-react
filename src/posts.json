@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Understanding React Components",
+    "content": "React components are the building blocks of any React application. They allow you to split the UI into independent, reusable pieces.",
+    "author": "Jane Doe",
+    "date": "October 1, 2023"
+  },
+  {
+    "title": "State Management in React",
+    "content": "Managing state in React can be done using hooks like useState and useReducer, or through external libraries like Redux.",
+    "author": "John Smith",
+    "date": "September 15, 2023"
+  },
+  {
+    "title": "React Hooks: A Deep Dive",
+    "content": "Hooks are a new addition in React that let you use state and other React features without writing a class.",
+    "author": "Alice Johnson",
+    "date": "August 20, 2023"
+  }
+]
