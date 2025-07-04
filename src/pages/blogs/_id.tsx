@@ -1,20 +1,13 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 
 
 
 // Kalo ada _ di awal file maka param id akan diambil dari url
 // Misal: /blogs/1 -> id = 1
 function SinglePost(){
-  const { id } = useParams();
-  const [post, setPost] = useState<{ title?: string; body?: string } | null>(null);
-
-  useEffect(() => {
-    if (!id) return;
-    fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
-      .then(response => response.json())
-      .then(json => setPost(json));
-  }, [id])
+  const post = useLoaderData() as { title?: string, body?: string, id?: number };
 
   return(
     <>
